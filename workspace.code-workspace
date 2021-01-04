@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../Desktop/project"
+		},
+		{
+			"path": "../LearningGit/git_test_odinproject"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "google-homepage"
+	}
+}
