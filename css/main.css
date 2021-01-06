@@ -1,12 +1,54 @@
-.nav-header-item-apps svg {
-  height: 30px;
+body {
+  font-family: arial,sans-serif;
+  font-size: small;
 }
+
+.nav-header-item {
+  padding-left: 15px;
+}
+
+.nav-header-item-apps svg{
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+}
+
+.nav-header-item-user svg {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.nav-header-link {
+    display: inline-block;
+    padding-left: 15px;
+    color: #000;
+    opacity: 0.75;
+}
+
+#app-selector {
+  opacity: .55;
+}
+
+#user-logo{
+  opacity: 1;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .push-right {
     margin-left:auto;
 }
 .nav-header {
   display: flex;
   height: 30px;
+  align-items: center;
 }
 
 .nav-footer{
@@ -18,3 +60,5 @@
 ul {
   list-style-type: none;
 }
+
+
