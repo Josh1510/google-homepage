@@ -4,28 +4,46 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
 
-        <style>
-            body {
-                background-color: black;
-            }
-            #all-your-base {
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <a href=../index.html><img src="../images/all-your-base.png" alt="ALL YOUR BASE ARE BELONG TO US" id="all-your-base"></a>
-        <script src="" async defer></script>
-    </body>
+    <style>
+      body {
+        background-color: black;
+        overflow: hidden;
+      }
+
+      #all-your-base {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <div class="body-container">
+      <div class="image-container">
+        <a href=../index.html><img
+          src="../images/all-your-base.png"
+          alt="ALL YOUR BASE ARE BELONG TO US"
+          id="all-your-base"
+        />
+      </div>
+    </div>
+  </body>
 </html>
