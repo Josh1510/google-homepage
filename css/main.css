@@ -3,27 +3,47 @@ body {
   font-size: small;
 }
 
+.nav-header {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
 .nav-header-item {
-  padding-left: 15px;
 }
 
 .nav-header-item-apps svg {
-  height: 17px;
-  width: 17px;
+  height: 16px;
+  width: 16px;
   display: inline-block;
+  opacity: 0.5;
+  padding-left: 7px;
+  margin-right: -2px;
 }
 
 .nav-header-item-user svg {
-  height: 50px;
-  width: 50px;
+  height: 48px;
+  width: 48px;
   display: inline-block;
+  padding-right: 13px;
 }
 
 .nav-header-link {
   display: inline-block;
-  padding-left: 15px;
-  color: #000;
+  color: #000000;
   opacity: 0.75;
+  padding-left: 15px;
+}
+
+.nav-header-link-svg {
+  display: inline-block;
+  color: #000000;
+  padding: 5px 0px 0px 15px;
+}
+.nav-header-item-apps:hover svg {
+  opacity: 1;
 }
 
 main {
@@ -31,14 +51,14 @@ main {
 }
 
 .google-logo {
-  padding: 109px 0 30px;
+  padding: 140px 0 24px;
   height: auto;
   max-width: 272px;
 }
 
 .search-container {
   height: 39px;
-  width: 456px;
+  width: 458px;
   display: flex;
   justify-content: space-around;
   border-style: solid;
@@ -57,6 +77,7 @@ main {
 .search-container:hover {
   box-shadow: 1px 1px 8px 1px #dcdcdc;
 }
+
 textarea:focus,
 input:focus {
   outline: none;
@@ -73,11 +94,8 @@ input[type="text"] {
   padding: 12px 20px;
   margin: 8px 0;
   border: none;
-
   padding: 1px 2px;
-
   font-size: 16px;
-
   color: #101010;
 }
 
@@ -97,6 +115,7 @@ input[type="text"] {
   font-size: 14px;
   border: 1px solid #f8f9fa;
   background-color: #f8f9fa;
+  border-radius: 4px;
 }
 
 input[type="submit"] {
@@ -114,12 +133,8 @@ input[type="submit"] {
   text-align: center;
 }
 
-#app-selector {
-  opacity: 0.55;
-}
-
-#user-logo {
-  opacity: 1;
+.search-button:hover {
+  border: 1px solid #0000001a;
 }
 
 a:link {
@@ -132,11 +147,6 @@ a:hover {
 
 .push-right {
   margin-left: auto;
-}
-.nav-header {
-  display: flex;
-  height: 30px;
-  align-items: center;
 }
 
 .nav-footer {
