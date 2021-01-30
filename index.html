@@ -21,51 +21,54 @@
     <![endif]-->
 
     <!-- Header -->
-    <nav>
-      <ul class="nav-header">
-        <li class="nav-header-item">
-          <a href="https://about.google/" class="nav-header-link">About</a>
-        </li>
-        <li class="nav-header-item">
-          <a href="https://store.google.com/AU/" class="nav-header-link"
-            >Store</a
-          >
-        </li>
-        <li class="nav-header-item push-right">
-          <a href="https://mail.google.com/mail/" class="nav-header-link"
-            >Gmail</a
-          >
-        </li>
-        <li class="nav-header-item">
-          <a href="https://www.google.com.au/imghp" class="nav-header-link"
-            >Images</a
-          >
-        </li>
+    <header class="header">
+      <nav>
+        <ul class="nav-header">
+          <li class="nav-header-item">
+            <a href="https://about.google/" class="nav-header-link">About</a>
+          </li>
+          <li class="nav-header-item">
+            <a href="https://store.google.com/AU/" class="nav-header-link"
+              >Store</a
+            >
+          </li>
+          <li class="nav-header-item push-right">
+            <a href="https://mail.google.com/mail/" class="nav-header-link"
+              >Gmail</a
+            >
+          </li>
+          <li class="nav-header-item">
+            <a href="https://www.google.com.au/imghp" class="nav-header-link"
+              >Images</a
+            >
+          </li>
 
-        <!-- app-selector is loaded from appSelector.html using jquery. 16x16px grid with 9 3x3 squares inside. -->
-        <li class="nav-header-item nav-header-item-apps">
-          <a href="#" class="nav-header-link-svg" id="app-selector">APPS</a>
-        </li>
+          <!-- app-selector is loaded from appSelector.html using jquery. 16x16px grid with 9 3x3 squares inside. -->
+          <li class="nav-header-item nav-header-item-apps">
+            <a href="#" class="nav-header-link-svg" id="app-selector">APPS</a>
+          </li>
 
-        <!-- user-logo is loaded from userLogo.html using jquery. Circle svg with the border coloured, profile image inside circle. -->
-        <li class="nav-header-item nav-header-item-user">
-          <a href="#" class="nav-header-link-svg" id="user-logo">Images</a>
-        </li>
-      </ul>
-    </nav>
-
+          <!-- user-logo is loaded from userLogo.html using jquery. Circle svg with the border coloured, profile image inside circle. -->
+          <li class="nav-header-item nav-header-item-user">
+            <a href="#" class="nav-header-link-svg" id="user-logo">Images</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- Main -->
-    <main>
+    <main class="main">
       <img src="images/googlelogo.png" alt="Google Logo" class="google-logo" />
       <div class="search-container">
-        <!-- magnify-glass loads magnifyGlass.html using jquery -->
-        <div class="magnify-glass" id="magnify-glass"></div>
-        <div class="search-input">
-          <input type="text" name="search" id="search" />
-        </div>
+        <div class="search-container-contents">
+          <!-- magnify-glass loads magnifyGlass.html using jquery -->
+          <div class="magnify-glass" id="magnify-glass"></div>
+          <div class="search-input">
+            <input type="text" name="search" id="search" />
+          </div>
 
-        <!-- microphone-logo loads microphoneLogo.html using jquery -->
-        <div class="microphone-logo" id="microphone-logo"></div>
+          <!-- microphone-logo loads microphoneLogo.html using jquery -->
+          <div class="microphone-logo" id="microphone-logo"></div>
+        </div>
       </div>
       <div class="search-button-container">
         <button type="submit" class="search-button">Google Search</button>
@@ -74,7 +77,7 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <nav>
         <ul class="nav-footer">
           <li class="nav-footer-item">

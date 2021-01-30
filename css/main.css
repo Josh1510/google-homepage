@@ -1,8 +1,21 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: arial, sans-serif;
   font-size: small;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
+.header {
+  min-height: 50px;
+  background-color: red;
+  flex-shrink: 0;
+}
 .nav-header {
   display: flex;
   height: 30px;
@@ -43,8 +56,10 @@ body {
   opacity: 1;
 }
 
-main {
+.main {
   text-align: center;
+  flex: 1;
+  background-color: blue;
 }
 
 .google-logo {
@@ -56,23 +71,25 @@ main {
 .search-container {
   height: 39px;
   width: 458px;
-  display: flex;
-  justify-content: space-around;
   border-style: solid;
-  position: relative;
-  align-items: center;
   border: 1px solid #dfe1e5;
   border-radius: 24px;
   padding: 5px 8px 0 16px;
   margin: 0 auto;
 }
+.search-container-contents {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+}
 
 .search-container:focus-within {
-  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  box-shadow: 1px 1px 6px 1px #dcdcdc;
 }
 
 .search-container:hover {
-  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  box-shadow: 1px 1px 6px 1px #dcdcdc;
 }
 
 textarea:focus,
@@ -81,15 +98,19 @@ input:focus {
 }
 
 .magnify-glass {
+  position: absolute;
   height: 20px;
   width: 20px;
+  left: -2px;
+  top: 7px;
+  opacity: 0.35;
 }
 
 input[type="text"] {
   width: 387px;
   height: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 0px;
   border: none;
   padding: 1px 2px;
   font-size: 16px;
@@ -97,9 +118,12 @@ input[type="text"] {
 }
 
 .microphone-logo {
+  position: absolute;
   height: 24px;
   width: 24px;
-  padding: 0 8px;
+  padding: 0px 10px;
+  right: -2px;
+  top: 5px;
 }
 
 .search-button-container button {
@@ -108,11 +132,13 @@ input[type="text"] {
   padding: 0 16px;
   margin: 11px 4px;
   color: #3c4043;
-  font-family: arial, sans-serif;
   font-size: 14px;
   border: 1px solid #f8f9fa;
   background-color: #f8f9fa;
   border-radius: 4px;
+}
+.search-button-container {
+  padding-top: 18px;
 }
 
 input[type="submit"] {
@@ -121,8 +147,6 @@ input[type="submit"] {
   border: 1px solid #f8f9fa;
   border-radius: 4px;
   color: #3c4043;
-  cursor: pointer;
-  font-family: arial, sans-serif;
   font-size: 14px;
   margin: 11px 4px;
   min-width: 54px;
@@ -144,6 +168,11 @@ a:hover {
 
 .push-right {
   margin-left: auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: yellow;
 }
 
 .nav-footer {
