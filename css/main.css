@@ -1,3 +1,5 @@
+* { margin:0; padding:0; }
+
 html,
 body {
   height: 100%;
@@ -13,8 +15,8 @@ body {
 
 .header {
   min-height: 50px;
-  background-color: red;
   flex-shrink: 0;
+  margin: 13px 8px 0 8px;
 }
 .nav-header {
   display: flex;
@@ -59,11 +61,10 @@ body {
 .main {
   text-align: center;
   flex: 1;
-  background-color: blue;
 }
 
 .google-logo {
-  padding: 140px 0 24px;
+  padding: 135px 0 24px;
   height: auto;
   max-width: 272px;
 }
@@ -172,11 +173,16 @@ a:hover {
 
 .footer {
   flex-shrink: 0;
-  background-color: yellow;
 }
 
 .nav-footer {
   display: flex;
+  background-color: #F2F2F2;
+  font-size: 14px;
+}
+
+.nav-footer-link-australia {
+  font-size: 15px;
 }
 
 ul {
