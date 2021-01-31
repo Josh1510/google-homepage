@@ -178,14 +178,21 @@ a:hover {
   background-color: #F2F2F2;
   font-size: 14px;
   border-top: 1px solid #DADCE0;
-  padding: 12px 16px;
+  padding: 12px 12px;
 }
 
-.nav-footer-link {
+.nav-footer-link-left {
   color: #6F6F6F;
-  padding: 14px;
+  padding: 0 9px 0 18px;
+}
+
+.nav-footer-link-right {
+  color: #6F6F6F;
+  padding: 0 18px 0 9px;
 }
 
 .nav-footer-link-australia {
   font-size: 15px;
+  color: #6F6F6F;
+  padding: 0 9px 0 18px;
 }
