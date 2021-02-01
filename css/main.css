@@ -219,23 +219,50 @@ a:hover {
 /* footer is moved to two lines */
 @media only screen and (max-width: 805px) {
   main {
-    background-color: red;
   }
 
   .footer-nav-bottom-container {
-    display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
   }
 
   .nav-footer-link-left {
-    display: inline-block;
+    padding: auto;
+  }
+  
+  .nav-footer-link-right {
+    padding: auto;
+  }
+  
+  .footer-nav-left {
+    min-width: auto;
+    padding-top: 25px;
+    padding-right: 10px;
+  }
+
+  .footer-nav-right {
+    padding-left: 10px;
+  }
+
+  .push-right {
     margin: auto;
   }
 
-  .nav-footer-link-right {
-    display: inline-block;
-    margin: auto;
+}
+
+/* search box resized */
+@media only screen and (max-width: 548px) {
+  main {
+  }
+
+  .search-container {
+    margin: 0 32px;
+  }
+
+  input[type="text"] {
+    width: auto;
+    height: 100%;
   }
 }
 
