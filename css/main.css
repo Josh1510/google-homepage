@@ -1,5 +1,8 @@
-* { margin:0; padding:0; list-style-type:none; text-decoration: none;
-
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 html,
@@ -177,32 +180,60 @@ a:hover {
 .nav-footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-size: 14px;
-  border-top: 1px solid #DADCE0;
-  padding: 12px 12px;
 }
 
-.nav-footer-link-left {
-  color: #6F6F6F;
-  padding: 0 9px 0 18px;
-}
-
-.nav-footer-link-right {
-  color: #6F6F6F;
-  padding: 0 18px 0 9px;
+.footer-nav-top-container {
+  background-color: #f2f2f2;
+  border-top: 1px solid #dadce0;
+  padding: 11px 12px 12px 12px;
 }
 
 .nav-footer-link-australia {
   font-size: 15px;
-  color: #6F6F6F;
+  color: #6f6f6f;
   padding: 0 9px 0 18px;
 }
+
+.footer-nav-bottom-container {
+  display: flex;
+  background-color: #f2f2f2;
+  border-top: 1px solid #dadce0;
+  padding: 12px 12px;
+}
+
+.nav-footer-link-left {
+  color: #6f6f6f;
+  padding: 0 9px 0 18px;
+}
+
+.nav-footer-link-right {
+  color: #6f6f6f;
+  padding: 0 18px 0 9px;
+}
+
+.footer-nav-left {
+  min-width: 566px;
 
 /* footer is moved to two lines */
 @media only screen and (max-width: 805px) {
   main {
     background-color: red;
+  }
+
+  .footer-nav-bottom-container {
+    flex-wrap: wrap;
+  }
+
+  .nav-footer-link-left {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-footer-link-right {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
