@@ -215,7 +215,7 @@ a:hover {
 
 .footer-nav-left {
   min-width: 566px;
-
+}
 /* footer is moved to two lines */
 @media only screen and (max-width: 805px) {
   main {
@@ -223,17 +223,19 @@ a:hover {
   }
 
   .footer-nav-bottom-container {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .nav-footer-link-left {
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
+    margin: auto;
   }
 
   .nav-footer-link-right {
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
+    margin: auto;
   }
 }
 
