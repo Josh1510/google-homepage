@@ -245,16 +245,13 @@ a:hover {
     padding-left: 10px;
   }
 
-  .push-right {
+  .footer-nav-right .push-right {
     margin: auto;
   }
 }
 
 /* search box resized */
 @media only screen and (max-width: 548px) {
-  main {
-  }
-
   .search-container {
     margin: 0 32px;
   }
