@@ -169,7 +169,11 @@ a:hover {
   text-decoration: underline;
 }
 
-.push-right {
+.push-right-header {
+  margin-left: auto;
+}
+
+.push-right-footer {
   margin-left: auto;
 }
 
@@ -245,7 +249,7 @@ a:hover {
     padding-left: 10px;
   }
 
-  .footer-nav-right .push-right {
+  .push-right-footer {
     margin: auto;
   }
 }
