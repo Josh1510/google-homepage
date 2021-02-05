@@ -230,11 +230,11 @@ a:hover {
   .nav-footer-link-left {
     padding: auto;
   }
-  
+
   .nav-footer-link-right {
     padding: auto;
   }
-  
+
   .footer-nav-left {
     min-width: auto;
     padding-top: 25px;
@@ -248,7 +248,6 @@ a:hover {
   .push-right {
     margin: auto;
   }
-
 }
 
 /* search box resized */
@@ -268,7 +267,7 @@ a:hover {
 
 /* header is removed from view */
 @media only screen and (max-width: 380px) {
-  main {
-    background-color: blue;
+  header nav {
+    display: none;
   }
 }
