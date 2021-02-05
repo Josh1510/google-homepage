@@ -220,11 +220,10 @@ a:hover {
 .footer-nav-left {
   min-width: 566px;
 }
+.footer-nav-right {
+}
 /* footer is moved to two lines */
 @media only screen and (max-width: 805px) {
-  main {
-  }
-
   .footer-nav-bottom-container {
     flex-direction: column-reverse;
     justify-content: center;
@@ -241,12 +240,12 @@ a:hover {
 
   .footer-nav-left {
     min-width: auto;
-    padding-top: 25px;
-    padding-right: 10px;
+    padding-top: 24px;
+    padding-right: 9px;
   }
 
   .footer-nav-right {
-    padding-left: 10px;
+    padding-left: 9px;
   }
 
   .push-right-footer {
@@ -256,6 +255,10 @@ a:hover {
 
 /* search box resized */
 @media only screen and (max-width: 548px) {
+  body {
+    overflow: visible;
+  }
+
   .search-container {
     margin: 0 32px;
   }
@@ -263,6 +266,10 @@ a:hover {
   input[type="text"] {
     width: auto;
     height: 100%;
+  }
+
+  footer {
+    min-width: 400px;
   }
 }
 
